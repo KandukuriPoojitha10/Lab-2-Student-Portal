@@ -1,0 +1,103 @@
+#root {
+  min-height: 100vh;
+}
+
+.app, .container, .auth-container, .dashboard {
+  min-height: 100vh;
+  padding: 30px;
+}
+
+h1, h2, h3 {
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+form {
+  width: 100%;
+  max-width: 420px;
+  margin: 70px auto;
+  padding: 35px;
+  background: rgba(255, 255, 255, 0.09);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+  backdrop-filter: blur(15px);
+}
+
+input {
+  width: 100%;
+  padding: 14px;
+  margin: 10px 0 18px;
+  border: 1px solid #59617d;
+  border-radius: 10px;
+  outline: none;
+  background: #202943;
+  color: white;
+  font-size: 15px;
+}
+
+input::placeholder {
+  color: #b7bfd3;
+}
+
+input:focus {
+  border-color: #a78bfa;
+  box-shadow: 0 0 8px #8b5cf6;
+}
+
+button {
+  padding: 13px 22px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #8b5cf6, #6366f1);
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 7px 20px rgba(139,92,246,0.4);
+}
+
+a {
+  color: #c4b5fd;
+  text-decoration: none;
+}
+
+p {
+  color: #d1d5e5;
+  margin-top: 12px;
+}
+
+.dashboard {
+  padding: 40px;
+}
+
+.dashboard h1 {
+  font-size: 32px;
+}
+
+.card, .stat-card {
+  display: inline-block;
+  min-width: 220px;
+  padding: 25px;
+  margin: 12px;
+  background: rgba(255,255,255,0.09);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+@media (max-width: 600px) {
+  form {
+    margin: 30px auto;
+    padding: 25px;
+  }
+
+  .dashboard {
+    padding: 20px;
+  }
+}
